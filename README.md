@@ -1,56 +1,140 @@
-# NS.DEV — Portfólio de Nathaly Sene
+# NS.DEV — Portfolio & Digital Identity
 
-Portfólio e cartão de visita digital em React, TypeScript, Vite e Tailwind CSS v4.
+**Personal Portfolio | Full Stack Development | IT Infrastructure**
 
-## Requisitos
-- Node.js 20.19+ ou 22.12+
+Portfólio pessoal e cartão de visita digital desenvolvido para apresentar minha trajetória profissional, habilidades técnicas e projetos na área de Tecnologia da Informação.
 
-## Iniciar no Windows (PowerShell)
-```powershell
-cd ns-dev-portfolio
+O projeto combina uma interface **Dark Minimalist**, navegação intuitiva e elementos interativos, proporcionando uma experiência moderna, responsiva e funcional.
+
+---
+
+## Sobre o projeto
+
+O **NS.DEV** foi criado para centralizar minha identidade profissional em um único ambiente digital, conectando minhas experiências em **Infraestrutura e Suporte de TI** aos meus conhecimentos em **Desenvolvimento Full Stack**.
+
+Mais do que um portfólio, o site funciona como um cartão de visita interativo, facilitando o contato com recrutadores, profissionais de tecnologia e potenciais clientes.
+
+### Funcionalidades
+
+- Interface Dark Minimalist com detalhes em roxo
+- Layout responsivo para desktop, tablet e dispositivos móveis
+- Apresentação profissional e trajetória acadêmica
+- Seção de habilidades e tecnologias
+- Exibição de projetos com acesso aos repositórios
+- Cartão de visita digital
+- Integração com WhatsApp, Instagram, LinkedIn e GitHub
+- Caixa de diálogo com mensagem personalizada para WhatsApp
+- Animações e transições interativas
+
+---
+
+## Tecnologias utilizadas
+
+**Frontend**
+
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-20232A?style=for-the-badge&logo=typescript&logoColor=3178C6)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-20232A?style=for-the-badge&logo=tailwindcss&logoColor=06B6D4)
+![Vite](https://img.shields.io/badge/Vite-20232A?style=for-the-badge&logo=vite&logoColor=646CFF)
+
+**Ferramentas**
+
+![Git](https://img.shields.io/badge/Git-20232A?style=for-the-badge&logo=git&logoColor=F05032)
+![GitHub](https://img.shields.io/badge/GitHub-20232A?style=for-the-badge&logo=github&logoColor=white)
+![VS Code](https://img.shields.io/badge/VS_Code-20232A?style=for-the-badge&logo=visualstudiocode&logoColor=007ACC)
+
+---
+
+## Estrutura do projeto
+
+```text
+ns-dev-portfolio/
+├── public/
+├── src/
+│   ├── components/
+│   ├── data/
+│   │   └── portfolio.ts
+│   ├── App.tsx
+│   ├── main.tsx
+│   └── styles.css
+├── index.html
+├── package.json
+├── tsconfig.json
+├── vite.config.ts
+└── README.md
+```
+
+---
+
+## Executando localmente
+
+**1. Clone o repositório**
+
+```bash
+git clone https://github.com/nathalySene/ns-identity.git
+```
+
+**2. Acesse o diretório**
+
+```bash
+cd ns-identity
+```
+
+**3. Instale as dependências**
+
+```bash
 npm install
+```
+
+**4. Inicie o servidor**
+
+```bash
 npm run dev
 ```
-Abra o endereço local mostrado no terminal (normalmente http://localhost:5173).
 
-## Compilar
-```powershell
-npm run build
-npm run preview
-```
+Acesse o endereço exibido no terminal, normalmente `http://localhost:5173`.
 
-## Personalizar antes de publicar
-1. Edite `src/data/portfolio.ts`: e-mail, LinkedIn e WhatsApp (opcionais).
-2. Revise descrições de competências e projetos. Não declare experiência que você não possui.
-3. Substitua o card "Seu próximo projeto" por um projeto real.
-4. Adicione sua foto, currículo ou outros materiais apenas se desejar.
-5. Faça o deploy da pasta no GitHub e importe o repositório na Vercel (framework Vite; build `npm run build`; saída `dist`).
+> O endereço de clonagem considera o nome sugerido `ns-identity`. Ajuste caso utilize outro nome.
 
-O botão **Salvar contato** gera um arquivo `.vcf` usando as informações preenchidas no perfil. Os links vazios de contato não aparecem no site.
+---
 
-## Estrutura
-- `src/App.tsx`: seções e componentes da página
-- `src/data/portfolio.ts`: conteúdo editável
-- `src/styles.css`: identidade visual e responsividade
-- `vite.config.ts`: React e Tailwind
+## Projetos em destaque
 
-## Observações
-O projeto não possui formulário com armazenamento de dados nem backend. Os links de contato são opcionais e devem ser preenchidos por você. Fontes do Google exigem acesso à internet.
+### SuporteHub — AWS
 
-## Contatos e redes sociais
+Sistema de Help Desk e gerenciamento de chamados de TI, desenvolvido utilizando **C#, ASP.NET Core, AWS e DynamoDB**.
 
-Edite `src/data/portfolio.ts` e preencha `whatsapp`, `instagram`, `linkedin` e, se desejar, `email`.
+[Visualizar repositório](https://github.com/nathalySene/AWS)
 
-- `whatsapp`: somente números, com DDI 55 e DDD (ex.: `5511999999999`). O botão abre uma conversa com mensagem inicial.
-- `instagram`: endereço completo, como `https://www.instagram.com/seuusuario/`.
-- `linkedin`: endereço completo, como `https://www.linkedin.com/in/seuperfil/`.
-- Campos vazios não geram links quebrados: os respectivos cartões ficam ocultos até serem preenchidos.
-- O botão **Salvar contato** também inclui os dados preenchidos no arquivo vCard.
+### Sistema de Assinaturas Microsoft
 
-Não publique seu número pessoal se não quiser receber mensagens de desconhecidos.
+Aplicação web com autenticação Microsoft, integração com Microsoft Graph e preenchimento automatizado de informações profissionais.
 
-## Projeto AWS no portfólio
-A seção de projetos inclui o **SuporteHub — Help Desk na AWS** com link para https://github.com/nathalySene/AWS.
+[Visualizar repositório](https://github.com/nathalySene/Assinaturas)
 
-## Contato por WhatsApp
-Ao clicar no cartão do WhatsApp, o visitante pode editar uma mensagem em uma caixa de diálogo dentro do portfólio. O botão **Continuar no WhatsApp** abre `wa.me` com o texto preenchido. A mensagem **não é enviada automaticamente**; o visitante confirma o envio no WhatsApp.
+---
+
+## Sobre mim
+
+Sou **Nathaly Sene**, Técnica em Desenvolvimento de Sistemas pela ETEC e graduanda em Análise e Desenvolvimento de Sistemas pela FIAP.
+
+Minha trajetória reúne experiências em suporte técnico, infraestrutura corporativa e desenvolvimento de sistemas, com conhecimentos em Active Directory, Microsoft 365, Windows Server, TOTVS Protheus e tecnologias de desenvolvimento web.
+
+Busco unir conhecimento técnico, criatividade e melhoria contínua para desenvolver soluções eficientes e contribuir com a evolução tecnológica de pessoas e organizações.
+
+---
+
+## Contato
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-20232A?style=for-the-badge&logo=linkedin&logoColor=0A66C2)](https://www.linkedin.com/in/nathalysene)
+[![Instagram](https://img.shields.io/badge/Instagram-20232A?style=for-the-badge&logo=instagram&logoColor=E4405F)](https://www.instagram.com/neruu0)
+[![WhatsApp](https://img.shields.io/badge/WhatsApp-20232A?style=for-the-badge&logo=whatsapp&logoColor=25D366)](https://wa.me/5511991889411)
+[![GitHub](https://img.shields.io/badge/GitHub-20232A?style=for-the-badge&logo=github&logoColor=white)](https://github.com/nathalySene)
+
+---
+
+<p align="center">
+  <strong>NS.DEV</strong><br>
+  <i>Technology. Identity. Innovation.</i><br><br>
+  Developed by Nathaly Sene © 2026
+</p>
